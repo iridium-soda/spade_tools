@@ -3,8 +3,8 @@ import pandas as pd
 import sys
 import json
 import os
-
-import logging as log
+from logger import log
+import tracer
 def main(path:str)->None:
     try:
         with open(path, 'r') as f:
@@ -13,9 +13,10 @@ def main(path:str)->None:
         
     except IOError:
         log.exception("Unable to open or read %s",path)
-    print(df)
-    #x = pd.json_normalize(df)
-    print(pd.json_normalize(df))
+    df = pd.json_normalize(df)
+    model=tracer.DataModel(df=df)# All operations are executed in this class
+
+
 if __name__=="__main__":
     usage="python3 libnss_extractor.py <SPADE_raw_json>"
     log.basicConfig(format='%(levelname)s:%(message)s',level=log.DEBUG)
