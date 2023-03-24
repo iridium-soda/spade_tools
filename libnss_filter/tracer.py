@@ -47,33 +47,106 @@ class DataModel(object):
         self.edges.to_csv("./edges.csv", sep=",", index=False, header=True)
         self.nodes.to_csv("./nodes.csv", sep=",", index=False, header=True)
 
-    def get_atrifact_by_path(self, path: str) -> pd.DataFrame:
+    def get_node_by_path(self, path: str) -> pd.DataFrame:
         """
         To query atrifact in nodes by its path
         """
-        return self.df.loc[self.df["annotations.path"] == path][
+        return self.nodes.query("`annotations.path`==@path")
+        return self.nodes.loc[self.nodes["annotations.path"] == path][
             0
         ]  # query result should be the one and only
-
-    def get_atrifact_by_id(self, id: str) -> pd.DataFrame:
+    # TODO: 查询还有很大问题
+    def get_node_by_id(self, id: str) -> pd.DataFrame:
         """
         To query artifact in nodes by its id
         """
-        return self.df.loc[self.df["id"] == id][
+        return self.nodes.query("`id`==@id")
+        return self.nodes.loc[self.nodes["id"] == id][
             0
         ]  # query result should be the one and only
 
-    def trace_atrifacts_upwards(self, target_id: str, lev: int):
+    def trace_atrifacts_upwards_by_path(self, path: str,lev:int)->list[str]:
+        """
+        External interface.To trace which artifacts trigger target atrifact with specific path. Just query for path, get its id and pass it to `trace_atrifacts_upwards_by_id`.
+        """
+        artifact = self.get_node_by_path(path)
+        log.debug(artifact)
+        if not artifact.empty:
+            return self.trace_atrifacts_upwards_by_id(artifact.iloc[0]['id'],lev)# TODO: 这里有问题
+        else:
+            log.fatal("No atrifact %s found. Check input file."%path)
+            return None
+        
+        
+
+    def trace_atrifacts_upwards_by_id(self, target_id: str, lev: int)->list[str]:
         """
         To trace which artifacts trigger target atrifact with specific id. May cause recursive call.
-        @targetid: center entity wanna trace
-        @lev: max levels wanna trace
+        Args:
+        targetid:
+            Center entity wanna trace
+        lev:
+            Max levels wanna trace
         """
         self.lev = lev
         # TODO: main entry of query
+        target_ids = [target_id]
+        while self.lev:
+            target_ids = self.trace_route_recursively(target_ids)
+            # TODO: show each layer nodes info
+        return target_ids
 
-    def trace_route_recursively(self, target_id_group: list[str]):
+    def get_parent_node_by_id(self, target_id: str) -> list[str]:
+        """
+        Simply find the parent node of the node with the id provided and the edge. May get multi edges which lead to multi parent nodes
+        """
+        target_edges = self.edges.query("to==@target_id")
+        # TODO: show each layer edges info
+
+        return (
+            target_edges["from"].drop_duplicates().values.tolist()
+        )  # Drop dulicate records and return as a list
+
+    def trace_route_recursively(self, target_id_group: list[str]) -> list[str]:
+        """
+        Recursive body to run query
+        Args:
+            target_id_group: list of node ids wanna trace
+        Returns:
+            list of nodes in the next level; can be recursed again
+        """
         self.lev -= 1
-        # TODO: finish core method
-        # Step1: locate each node
-        
+        return list(set([self.get_parent_node_by_id(id) for id in target_id_group]))
+
+    def show_record_info_by_id(self, isnode: bool, id: str) -> None:
+        """
+        Display node or edge with given id or event id
+        For a node, the following info will be displayed:
+            - type
+            - pid namespace
+            - annotations.net namespace
+            - annotations.ipc namespace
+            - annotations.ppid
+            - annotations.pid namespace
+            - annotations.exe
+            - annotations.mount namespace
+            - annotations.name
+            - annotations.user namespace
+            - annotations.path
+            - annotations.subtype
+            - annotations.command line
+            - path
+        For an edge, the following info will be displayed:
+            - type
+            - from
+            - to
+            - annotations.operation
+        Args:
+            isnode:
+                true->nodes search by `id`
+                false->edges search by `event id`
+
+        """
+        if isnode:
+            result = self.get_node_by_id(id)
+            # TODO: finish it later when the core functions are settled. display id and search it manually first.
