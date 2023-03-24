@@ -36,7 +36,7 @@ class DataModel(object):
             "`nodes` has the following columns:\n%s"
             % self.nodes.columns.values.tolist()
         )
-
+        # TODO: edges and nodes can be grouped into smaller groups have single type values to save space
         self.edges = self.edges.set_index(["annotations.event id"])
         self.nodes = self.nodes.set_index(["id"])
 
@@ -47,18 +47,33 @@ class DataModel(object):
         self.edges.to_csv("./edges.csv", sep=",", index=False, header=True)
         self.nodes.to_csv("./nodes.csv", sep=",", index=False, header=True)
 
-    def query_atrifact_id(self, path):
+    def get_atrifact_by_path(self, path: str) -> pd.DataFrame:
         """
-        To query atrifact in df by its path, return its id
+        To query atrifact in nodes by its path
         """
-        return self.df.loc[self.df["annotations.path"] == path][0][
-            "id"
+        return self.df.loc[self.df["annotations.path"] == path][
+            0
         ]  # query result should be the one and only
 
-    def trace_atrifacts_upwards(self, targetid, lev):
+    def get_atrifact_by_id(self, id: str) -> pd.DataFrame:
+        """
+        To query artifact in nodes by its id
+        """
+        return self.df.loc[self.df["id"] == id][
+            0
+        ]  # query result should be the one and only
+
+    def trace_atrifacts_upwards(self, target_id: str, lev: int):
         """
         To trace which artifacts trigger target atrifact with specific id. May cause recursive call.
         @targetid: center entity wanna trace
         @lev: max levels wanna trace
         """
         self.lev = lev
+        # TODO: main entry of query
+
+    def trace_route_recursively(self, target_id_group: list[str]):
+        self.lev -= 1
+        # TODO: finish core method
+        # Step1: locate each node
+        

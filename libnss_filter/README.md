@@ -49,5 +49,7 @@ Process:
     "type":"Process"
 }
 ```
+
+And each node is marked by its `id` field uniquely and edge is marked by its `event id` uniquely.
 # TroubleShoot
 `KeyError: 'Process'`: No record included in the data you provided has the `'Process'` key.
