@@ -1,12 +1,61 @@
-[{"annotations":{"event id":"764","pid":"3008","source":"syscall","time":"1679540190.928","operation":"mmap"},"from":"a16efa2da90bf41297a0a1e0df2bdf85","to":"b8b191e9e7880f3cfd2254e833ca2635","type":"WasDerivedFrom"}
-,{"annotations":{"memory address":"7f5930123000","size":"1a58","subtype":"memory","tgid":"3008","source":"syscall","version":"0"},"id":"ce458215400b73cb2f9980f02263247a","type":"Artifact"}
-,{"annotations":{"event id":"765","protection":"3","source":"syscall","time":"1679540190.928","operation":"mmap (write)"},"from":"ce458215400b73cb2f9980f02263247a","to":"13c578a0b1e8f6992c36259ddd2d00f5","type":"WasGeneratedBy"}
-,{"annotations":{"event id":"766","source":"syscall","time":"1679540190.928","operation":"close"},"from":"13c578a0b1e8f6992c36259ddd2d00f5","to":"b8b191e9e7880f3cfd2254e833ca2635","type":"Used"}
-,{"annotations":{"path":"/lib/x86_64-linux-gnu/libnss_files.so.2","subtype":"file","permissions":"0644","epoch":"0","source":"syscall","version":"0"},"id":"406d863c2d3d03be3c2db1f23b267b97","type":"Artifact"}
-,{"annotations":{"event id":"767","flags":"O_RDONLY","source":"syscall","time":"1679540190.928","operation":"open"},"from":"13c578a0b1e8f6992c36259ddd2d00f5","to":"406d863c2d3d03be3c2db1f23b267b97","type":"Used"}
-,{"annotations":{"memory address":"7f592fcf9000","size":"211738","subtype":"memory","tgid":"3008","source":"syscall","version":"0"},"id":"6121287dbfdfa3a6956efc59e1a4c5b8","type":"Artifact"}
-,{"annotations":{"event id":"768","protection":"5","source":"syscall","time":"1679540190.928","operation":"mmap (write)"},"from":"6121287dbfdfa3a6956efc59e1a4c5b8","to":"13c578a0b1e8f6992c36259ddd2d00f5","type":"WasGeneratedBy"}
-,{"annotations":{"gid":"0","euid":"0","children pid namespace":"4026531836","start time":"1679540190.367","ns pid":"2981","pid":"2981","source":"syscall","net namespace":"4026531992","ipc namespace":"4026531839","ppid":"2906","pid namespace":"4026531836","uid":"0","egid":"0","exe":"/usr/bin/sudo","mount namespace":"4026531840","name":"sudo","user namespace":"4026531837"},"id":"f25b0d40691d218ca120747c13fa5dfb","type":"Process"}
-,{"annotations":{"gid":"0","euid":"0","children pid namespace":"4026531836","start time":"1679540190.880","ns pid":"3008","pid":"3008","source":"syscall","net namespace":"4026531992","ipc namespace":"4026531839","ppid":"766","pid namespace":"4026531836","cwd":"/","uid":"0","egid":"0","exe":"/sbin/dumpe2fs","mount namespace":"4026531840","command line":"dumpe2fs -h /dev/sda1","name":"dumpe2fs","user namespace":"4026531837"},"id":"13c578a0b1e8f6992c36259ddd2d00f5","type":"Process"}
-,{"annotations":{"memory address":"7f592fcf9000","size":"211738","subtype":"memory","tgid":"3008","source":"syscall","version":"0"},"id":"6121287dbfdfa3a6956efc59e1a4c5b8","type":"Artifact"}
+[
+    {
+        "annotations": {
+            "path": "/lib/x86_64-linux-gnu/libnss_files.so.2",
+            "subtype": "file",
+            "permissions": "0644",
+            "epoch": "0",
+            "source": "syscall",
+            "version": "0"
+        },
+        "id": "1",
+        "type": "Artifact"
+    },
+    {
+        "annotations": {
+            "event id": "766",
+            "source": "syscall",
+            "time": "1679540190.928",
+            "operation": "close"
+        },
+        "from": "2",
+        "to": "1",
+        "type": "Used"
+    },
+    {
+        "annotations": {
+            "path": "/lib/x86_64-linux-gnu/libnsl.so.1",
+            "subtype": "file",
+            "permissions": "0644",
+            "epoch": "0",
+            "source": "syscall",
+            "version": "0"
+        },
+        "id": "2",
+        "type": "Artifact"
+    },
+    {
+        "annotations": {
+            "event id": "723",
+            "protection": "5",
+            "source": "syscall",
+            "time": "1679540190.924",
+            "operation": "mmap (write)"
+        },
+        "from": "3",
+        "to": "2",
+        "type": "WasGeneratedBy"
+    },
+    {
+        "annotations": {
+            "memory address": "7f593053b000",
+            "size": "206180",
+            "subtype": "memory",
+            "tgid": "3008",
+            "source": "syscall",
+            "version": "0"
+        },
+        "id": "3",
+        "type": "Artifact"
+    }
 ]

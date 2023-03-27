@@ -1,12 +1,20 @@
 import json
 
 import os
-DATA_PATH = "../test_data/Raw-full-untar.json"
+#DATA_PATH = "../test_data/Raw-full-untar.json"
+#DATA_PATH="./func_test.json"
+DATA_PATH="../test_data/Raw-for-normal-untar.json"
 TAR_FILE = "/lib/x86_64-linux-gnu/libnss_files.so.2"
 TAR_FILE_TYPE = "file"
 MAX_LEV = 6
 OUTPUT_PATH = "./data/"
-
+TAR_ID="8f6a92b01f51438c7789fb26eece1541" # For normal_untar only
+"""
+运行前有这几个地方需要检查和配置：
+1. 输入位置。最后target_list是TAR_FILE还是TAR_ID查找的
+2. 数据位置。DATA_PATH
+3. 查找方向。在调用tracer的位置找。
+"""
 
 def record_finder(keys: list, values: list) -> list[dict]:
     """ An universal finder for finging records.
@@ -78,14 +86,17 @@ def removeduplicate(list1:list[dict]):
             newlist.append(i)
     return newlist
 
-def tracer(root_artifact: dict, maxlevel: int) -> list[list[dict]]:
-    """ To trace upward to locate which atrifacts involved.
+def tracer(root_artifact: dict, maxlevel: int,direction:bool) -> list[list[dict]]:
+    """ To trace UPWARD or DOWNWARD to locate which atrifacts involved.
     There are two main categories of records in spade's audit results: points and edges. Points (entities) are linked to each other by edges, thus building up a complete chain of calls. g The function tries to derive the entity that uses it backwards, achieved by looking up the source of the edge pointing to the entity.
     Args:
         root_artifact:
         record of artifact wanna trace
         maxlevel:
         maxium steps wanna trace
+        direction:
+        true:Upward, to->from
+        false:Downward, from->to
     Returns:
         list of records which have less steps than maxlevel. res[index] means step=index+1
     """
@@ -93,17 +104,20 @@ def tracer(root_artifact: dict, maxlevel: int) -> list[list[dict]]:
     artifacts = [root_artifact]
     # Trace recursively
     for _ in range(maxlevel):
-        artifacts = recursively_trace(artifacts)
+        artifacts = recursively_trace(artifacts,direction)
         res.append(artifacts)
     
     return res
 
 
-def recursively_trace(artifacts: list[dict]) -> list[dict]:
+def recursively_trace(artifacts: list[dict],direction:bool) -> list[dict]:
     """ Recursive body of tracer.
     Provide one step of trace
     Arg:
         artifacts: list of records wanna find the upper level atrifact
+        direction: same as `tracer`:
+            true:Upward, to->from
+            false:Downward, from->to
     Return:
         list of artigfacts which "use" artifact with given id.
     """
@@ -112,13 +126,28 @@ def recursively_trace(artifacts: list[dict]) -> list[dict]:
         id = artifact['id']
         #print("id is %s"%id)
         # edge records which points to this artifact
-        edges = removeduplicate( record_finder(['to'], [id]))
+        if direction:
+            edges = removeduplicate( record_finder(['to'], [id]))
+        else:
+            edges = removeduplicate( record_finder(['from'], [id]))
         #print(edges)
-        for edge in edges:
-            to_id = edge['from']
-            #print("to:%s"%to_id)
-            res += record_finder(['id'], [to_id])
-
+        if direction:
+            for edge in edges:
+                to_id = edge['from']
+                #print("to:%s"%to_id)
+                tmp=record_finder(['id'], [to_id])
+                for r in tmp:
+                    # memory address has no parent and no use, drop it.
+                    if "memory address" not in r['annotations'].keys():
+                        res.append(r)
+        else:
+            for edge in edges:
+                from_id = edge['to']
+                tmp=record_finder(['id'], [from_id])
+                for r in tmp:
+                    # memory address has no parent and no use, drop it.
+                    if "memory address" not in r['annotations'].keys():
+                        res.append(r)         
     return removeduplicate(res)
 
 
@@ -161,7 +190,7 @@ if __name__ == "__main__":
         [['annotations', 'path'], ['annotations', 'subtype']], [TAR_FILE, TAR_FILE_TYPE])
     print("Get %d records. Ready to trace" % len(target_lists))
     res = []
-
+    target_lists=record_finder(['id'],[TAR_ID])# For test only
     #  Trace and display
     for target in target_lists:
 
@@ -169,7 +198,7 @@ if __name__ == "__main__":
         if not os.path.exists(path):
             os.mkdir(path)
 
-        res = tracer(target, MAX_LEV)
+        res = tracer(target, MAX_LEV,False)
 
         for index, lev in enumerate(res):
             # For each level, display it

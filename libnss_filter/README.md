@@ -50,7 +50,7 @@ Process:
 }
 ```
 
-And each node is marked by its `id` field uniquely and edge is marked by its `event id` uniquely.
+And each node is marked by its `id` field uniquely and edge is marked by its `event id` uniquely. For more details, see https://github.com/ashish-gehani/SPADE/wiki/Reporting-provenance-using-JSON
 # TroubleShoot
 `KeyError: 'Process'`: No record included in the data you provided has the `'Process'` key.
 
