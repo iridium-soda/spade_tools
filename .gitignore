@@ -130,4 +130,5 @@ dmypy.json
 .vscode/
 
 # Custom data directories
-libnss_filter/data/
+libnss_filter_legacy/data/
+simple_tracker/data/

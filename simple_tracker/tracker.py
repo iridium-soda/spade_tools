@@ -3,15 +3,14 @@ import json
 import os
 #DATA_PATH = "../test_data/Raw-full-untar.json"
 #DATA_PATH="./func_test.json"
-DATA_PATH="../test_data/Raw-for-normal-untar.json"
-TAR_FILE = "/lib/x86_64-linux-gnu/libnss_files.so.2"
-TAR_FILE_TYPE = "file"
-MAX_LEV = 6
-OUTPUT_PATH = "./data/"
-TAR_ID="8f6a92b01f51438c7789fb26eece1541" # For normal_untar only
+DATA_PATH="../test_data/Raw-for-normal-tar.json"
+MAX_LEV=6
+TAR_ID="7ea90b127113742b6a15a830df9371d3"
+OUTPUT_PATH="./data/"
+DIRECTION=False
 """
 运行前有这几个地方需要检查和配置：
-1. 输入位置。最后target_list是TAR_FILE还是TAR_ID查找的
+1. 输入位置。TAR_ID
 2. 数据位置。DATA_PATH
 3. 查找方向。在调用tracer的位置找。
 """
@@ -170,6 +169,8 @@ def display_name(records: list[dict], path: str):
             else:
                 tmp = {"mem addr": anno["memory address"], "subtype": anno["subtype"],
                        "id": record["id"], "type": record["type"]}
+            if "root path" in anno.keys():
+                tmp["root path"]=anno["root path"]
         filtered_records.append(tmp)
 
     print(filtered_records)
@@ -186,19 +187,35 @@ if __name__ == "__main__":
 
     with open(DATA_PATH, 'r') as f:
         DATA = json.load(f)
+    target_lists=[]
+    
+    
+    """
+    NOTE: if you need to trace a file, activate this
+    """
+    """
     target_lists = record_finder(
         [['annotations', 'path'], ['annotations', 'subtype']], [TAR_FILE, TAR_FILE_TYPE])
     print("Get %d records. Ready to trace" % len(target_lists))
+    """
+    
+    
     res = []
-    target_lists=record_finder(['id'],[TAR_ID])# For test only
+    
+    # Get target
+    target_lists=record_finder(['id'],[TAR_ID])
+    print("Get %d records. Ready to trace:" % len(target_lists))
+    print(target_lists)
+    
+    
     #  Trace and display
     for target in target_lists:
 
         path = OUTPUT_PATH+target['id']+"/"
         if not os.path.exists(path):
-            os.mkdir(path)
+            os.makedirs(path)
 
-        res = tracer(target, MAX_LEV,False)
+        res = tracer(target, MAX_LEV,DIRECTION)
 
         for index, lev in enumerate(res):
             # For each level, display it

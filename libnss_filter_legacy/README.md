@@ -2,6 +2,8 @@
 
 A filter script to extract `libnss_files.so2` flow by ID from SPADE raw json.
 
+> This tool is not developed completely and has been deprecated. Use ` ` instead.
+
 # Data structure
 Usually records from SPADE have two main categories:
 - Node refers entity like files or processes;

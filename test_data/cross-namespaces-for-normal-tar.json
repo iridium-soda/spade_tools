@@ -1,0 +1,1649 @@
+{
+  "artifact": {
+    "subtype": "unnamed pipe",
+    "tgid": "13403",
+    "read fd": "5",
+    "write fd": "6"
+  },
+  "cross-namespace-event-id": "0",
+  "reader": {
+    "gid": "0",
+    "euid": "0",
+    "children pid namespace": "4026531836",
+    "start time": "1680053806.149",
+    "ns pid": "13404",
+    "pid": "13404",
+    "source": "syscall",
+    "type": "Process",
+    "net namespace": "4026531992",
+    "ipc namespace": "4026531839",
+    "ppid": "13403",
+    "pid namespace": "4026531836",
+    "uid": "0",
+    "egid": "0",
+    "exe": "/usr/bin/sudo",
+    "mount namespace": "4026531840",
+    "name": "sudo",
+    "user namespace": "4026531837"
+  },
+  "writers": [{
+    "pid namespace": "-1",
+    "mount namespace": "-1",
+    "children pid namespace": "-1",
+    "net namespace": "-1",
+    "user namespace": "-1",
+    "ipc namespace": "-1"
+  }],
+  "read-edge": {
+    "event id": "412",
+    "source": "syscall",
+    "time": "1680053806.149",
+    "type": "Used",
+    "operation": "close"
+  },
+  "artifacts": [{
+    "subtype": "unnamed pipe",
+    "tgid": "13403",
+    "source": "syscall",
+    "read fd": "5",
+    "write fd": "6"
+  }]
+}
+{
+  "artifact": {
+    "subtype": "unnamed pipe",
+    "tgid": "13403",
+    "read fd": "5",
+    "write fd": "6"
+  },
+  "cross-namespace-event-id": "1",
+  "reader": {
+    "gid": "0",
+    "euid": "0",
+    "children pid namespace": "-1",
+    "pid": "13403",
+    "seen time": "1680053806.145",
+    "source": "syscall",
+    "type": "Process",
+    "net namespace": "-1",
+    "ipc namespace": "-1",
+    "ppid": "12923",
+    "pid namespace": "-1",
+    "uid": "0",
+    "egid": "0",
+    "exe": "/usr/bin/sudo",
+    "mount namespace": "-1",
+    "name": "sudo",
+    "user namespace": "-1"
+  },
+  "writers": [{
+    "pid namespace": "4026531836",
+    "mount namespace": "4026531840",
+    "children pid namespace": "4026531836",
+    "net namespace": "4026531992",
+    "user namespace": "4026531837",
+    "ipc namespace": "4026531839"
+  }],
+  "read-edge": {
+    "event id": "425",
+    "source": "syscall",
+    "time": "1680053806.153",
+    "type": "Used",
+    "operation": "close"
+  },
+  "artifacts": [{
+    "subtype": "unnamed pipe",
+    "tgid": "13403",
+    "source": "syscall",
+    "read fd": "5",
+    "write fd": "6"
+  }]
+}
+{
+  "artifact": {
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "read fd": "15",
+    "write fd": "16"
+  },
+  "cross-namespace-event-id": "2",
+  "reader": {
+    "gid": "0",
+    "euid": "0",
+    "children pid namespace": "4026531836",
+    "start time": "1680053806.341",
+    "ns pid": "13429",
+    "pid": "13429",
+    "source": "syscall",
+    "type": "Process",
+    "net namespace": "4026531992",
+    "ipc namespace": "4026531839",
+    "ppid": "919",
+    "pid namespace": "4026531836",
+    "cwd": "/",
+    "uid": "0",
+    "egid": "0",
+    "exe": "/usr/lib/udisks2/udisksd",
+    "mount namespace": "4026531840",
+    "name": "udisksd",
+    "user namespace": "4026531837"
+  },
+  "writers": [{
+    "pid namespace": "-1",
+    "mount namespace": "-1",
+    "children pid namespace": "-1",
+    "net namespace": "-1",
+    "user namespace": "-1",
+    "ipc namespace": "-1"
+  }],
+  "read-edge": {
+    "event id": "912",
+    "source": "syscall",
+    "time": "1680053806.341",
+    "type": "Used",
+    "operation": "close"
+  },
+  "artifacts": [{
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "source": "syscall",
+    "read fd": "15",
+    "write fd": "16"
+  }]
+}
+{
+  "artifact": {
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "read fd": "17",
+    "write fd": "18"
+  },
+  "cross-namespace-event-id": "3",
+  "reader": {
+    "gid": "0",
+    "euid": "0",
+    "children pid namespace": "4026531836",
+    "start time": "1680053806.341",
+    "ns pid": "13429",
+    "pid": "13429",
+    "source": "syscall",
+    "type": "Process",
+    "net namespace": "4026531992",
+    "ipc namespace": "4026531839",
+    "ppid": "919",
+    "pid namespace": "4026531836",
+    "cwd": "/",
+    "uid": "0",
+    "egid": "0",
+    "exe": "/usr/lib/udisks2/udisksd",
+    "mount namespace": "4026531840",
+    "name": "udisksd",
+    "user namespace": "4026531837"
+  },
+  "writers": [{
+    "pid namespace": "-1",
+    "mount namespace": "-1",
+    "children pid namespace": "-1",
+    "net namespace": "-1",
+    "user namespace": "-1",
+    "ipc namespace": "-1"
+  }],
+  "read-edge": {
+    "event id": "913",
+    "source": "syscall",
+    "time": "1680053806.341",
+    "type": "Used",
+    "operation": "close"
+  },
+  "artifacts": [{
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "source": "syscall",
+    "read fd": "17",
+    "write fd": "18"
+  }]
+}
+{
+  "artifact": {
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "read fd": "19",
+    "write fd": "20"
+  },
+  "cross-namespace-event-id": "4",
+  "reader": {
+    "gid": "0",
+    "euid": "0",
+    "children pid namespace": "4026531836",
+    "start time": "1680053806.341",
+    "ns pid": "13429",
+    "pid": "13429",
+    "source": "syscall",
+    "type": "Process",
+    "net namespace": "4026531992",
+    "ipc namespace": "4026531839",
+    "ppid": "919",
+    "pid namespace": "4026531836",
+    "cwd": "/",
+    "uid": "0",
+    "egid": "0",
+    "exe": "/usr/lib/udisks2/udisksd",
+    "mount namespace": "4026531840",
+    "name": "udisksd",
+    "user namespace": "4026531837"
+  },
+  "writers": [{
+    "pid namespace": "-1",
+    "mount namespace": "-1",
+    "children pid namespace": "-1",
+    "net namespace": "-1",
+    "user namespace": "-1",
+    "ipc namespace": "-1"
+  }],
+  "read-edge": {
+    "event id": "914",
+    "source": "syscall",
+    "time": "1680053806.341",
+    "type": "Used",
+    "operation": "close"
+  },
+  "artifacts": [{
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "source": "syscall",
+    "read fd": "19",
+    "write fd": "20"
+  }]
+}
+{
+  "artifact": {
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "read fd": "19",
+    "write fd": "20"
+  },
+  "cross-namespace-event-id": "5",
+  "reader": {
+    "gid": "0",
+    "euid": "0",
+    "children pid namespace": "-1",
+    "pid": "919",
+    "seen time": "1680053806.341",
+    "source": "syscall",
+    "type": "Process",
+    "net namespace": "-1",
+    "ipc namespace": "-1",
+    "ppid": "1",
+    "pid namespace": "-1",
+    "cwd": "/",
+    "uid": "0",
+    "egid": "0",
+    "exe": "/usr/lib/udisks2/udisksd",
+    "mount namespace": "-1",
+    "name": "udisksd",
+    "user namespace": "-1"
+  },
+  "writers": [{
+    "pid namespace": "4026531836",
+    "mount namespace": "4026531840",
+    "children pid namespace": "4026531836",
+    "net namespace": "4026531992",
+    "user namespace": "4026531837",
+    "ipc namespace": "4026531839"
+  }],
+  "read-edge": {
+    "event id": "1050",
+    "source": "syscall",
+    "time": "1680053806.353",
+    "type": "Used",
+    "operation": "close"
+  },
+  "artifacts": [{
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "source": "syscall",
+    "read fd": "19",
+    "write fd": "20"
+  }]
+}
+{
+  "artifact": {
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "read fd": "17",
+    "write fd": "18"
+  },
+  "cross-namespace-event-id": "6",
+  "reader": {
+    "gid": "0",
+    "euid": "0",
+    "children pid namespace": "-1",
+    "pid": "919",
+    "seen time": "1680053806.341",
+    "source": "syscall",
+    "type": "Process",
+    "net namespace": "-1",
+    "ipc namespace": "-1",
+    "ppid": "1",
+    "pid namespace": "-1",
+    "cwd": "/",
+    "uid": "0",
+    "egid": "0",
+    "exe": "/usr/lib/udisks2/udisksd",
+    "mount namespace": "-1",
+    "name": "udisksd",
+    "user namespace": "-1"
+  },
+  "writers": [{
+    "pid namespace": "4026531836",
+    "mount namespace": "4026531840",
+    "children pid namespace": "4026531836",
+    "net namespace": "4026531992",
+    "user namespace": "4026531837",
+    "ipc namespace": "4026531839"
+  }],
+  "read-edge": {
+    "event id": "1051",
+    "source": "syscall",
+    "time": "1680053806.353",
+    "type": "Used",
+    "operation": "close"
+  },
+  "artifacts": [{
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "source": "syscall",
+    "read fd": "17",
+    "write fd": "18"
+  }]
+}
+{
+  "artifact": {
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "read fd": "15",
+    "write fd": "16"
+  },
+  "cross-namespace-event-id": "7",
+  "reader": {
+    "gid": "0",
+    "euid": "0",
+    "children pid namespace": "4026531836",
+    "start time": "1680053806.353",
+    "ns pid": "13430",
+    "pid": "13430",
+    "source": "syscall",
+    "type": "Process",
+    "net namespace": "4026531992",
+    "ipc namespace": "4026531839",
+    "ppid": "919",
+    "pid namespace": "4026531836",
+    "cwd": "/",
+    "uid": "0",
+    "egid": "0",
+    "exe": "/usr/lib/udisks2/udisksd",
+    "mount namespace": "4026531840",
+    "name": "udisksd",
+    "user namespace": "4026531837"
+  },
+  "writers": [{
+    "pid namespace": "-1",
+    "mount namespace": "-1",
+    "children pid namespace": "-1",
+    "net namespace": "-1",
+    "user namespace": "-1",
+    "ipc namespace": "-1"
+  }],
+  "read-edge": {
+    "event id": "1059",
+    "source": "syscall",
+    "time": "1680053806.353",
+    "type": "Used",
+    "operation": "close"
+  },
+  "artifacts": [{
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "source": "syscall",
+    "read fd": "15",
+    "write fd": "16"
+  }]
+}
+{
+  "artifact": {
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "read fd": "17",
+    "write fd": "18"
+  },
+  "cross-namespace-event-id": "8",
+  "reader": {
+    "gid": "0",
+    "euid": "0",
+    "children pid namespace": "4026531836",
+    "start time": "1680053806.353",
+    "ns pid": "13430",
+    "pid": "13430",
+    "source": "syscall",
+    "type": "Process",
+    "net namespace": "4026531992",
+    "ipc namespace": "4026531839",
+    "ppid": "919",
+    "pid namespace": "4026531836",
+    "cwd": "/",
+    "uid": "0",
+    "egid": "0",
+    "exe": "/usr/lib/udisks2/udisksd",
+    "mount namespace": "4026531840",
+    "name": "udisksd",
+    "user namespace": "4026531837"
+  },
+  "writers": [{
+    "pid namespace": "-1",
+    "mount namespace": "-1",
+    "children pid namespace": "-1",
+    "net namespace": "-1",
+    "user namespace": "-1",
+    "ipc namespace": "-1"
+  }],
+  "read-edge": {
+    "event id": "1060",
+    "source": "syscall",
+    "time": "1680053806.353",
+    "type": "Used",
+    "operation": "close"
+  },
+  "artifacts": [{
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "source": "syscall",
+    "read fd": "17",
+    "write fd": "18"
+  }]
+}
+{
+  "artifact": {
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "read fd": "19",
+    "write fd": "20"
+  },
+  "cross-namespace-event-id": "9",
+  "reader": {
+    "gid": "0",
+    "euid": "0",
+    "children pid namespace": "4026531836",
+    "start time": "1680053806.353",
+    "ns pid": "13430",
+    "pid": "13430",
+    "source": "syscall",
+    "type": "Process",
+    "net namespace": "4026531992",
+    "ipc namespace": "4026531839",
+    "ppid": "919",
+    "pid namespace": "4026531836",
+    "cwd": "/",
+    "uid": "0",
+    "egid": "0",
+    "exe": "/usr/lib/udisks2/udisksd",
+    "mount namespace": "4026531840",
+    "name": "udisksd",
+    "user namespace": "4026531837"
+  },
+  "writers": [{
+    "pid namespace": "-1",
+    "mount namespace": "-1",
+    "children pid namespace": "-1",
+    "net namespace": "-1",
+    "user namespace": "-1",
+    "ipc namespace": "-1"
+  }],
+  "read-edge": {
+    "event id": "1061",
+    "source": "syscall",
+    "time": "1680053806.353",
+    "type": "Used",
+    "operation": "close"
+  },
+  "artifacts": [{
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "source": "syscall",
+    "read fd": "19",
+    "write fd": "20"
+  }]
+}
+{
+  "artifact": {
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "read fd": "19",
+    "write fd": "20"
+  },
+  "cross-namespace-event-id": "10",
+  "reader": {
+    "gid": "0",
+    "euid": "0",
+    "children pid namespace": "-1",
+    "pid": "919",
+    "seen time": "1680053806.341",
+    "source": "syscall",
+    "type": "Process",
+    "net namespace": "-1",
+    "ipc namespace": "-1",
+    "ppid": "1",
+    "pid namespace": "-1",
+    "cwd": "/",
+    "uid": "0",
+    "egid": "0",
+    "exe": "/usr/lib/udisks2/udisksd",
+    "mount namespace": "-1",
+    "name": "udisksd",
+    "user namespace": "-1"
+  },
+  "writers": [{
+    "pid namespace": "4026531836",
+    "mount namespace": "4026531840",
+    "children pid namespace": "4026531836",
+    "net namespace": "4026531992",
+    "user namespace": "4026531837",
+    "ipc namespace": "4026531839"
+  }],
+  "read-edge": {
+    "event id": "2450",
+    "source": "syscall",
+    "time": "1680053806.361",
+    "type": "Used",
+    "operation": "close"
+  },
+  "artifacts": [{
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "source": "syscall",
+    "read fd": "19",
+    "write fd": "20"
+  }]
+}
+{
+  "artifact": {
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "read fd": "17",
+    "write fd": "18"
+  },
+  "cross-namespace-event-id": "11",
+  "reader": {
+    "gid": "0",
+    "euid": "0",
+    "children pid namespace": "-1",
+    "pid": "919",
+    "seen time": "1680053806.341",
+    "source": "syscall",
+    "type": "Process",
+    "net namespace": "-1",
+    "ipc namespace": "-1",
+    "ppid": "1",
+    "pid namespace": "-1",
+    "cwd": "/",
+    "uid": "0",
+    "egid": "0",
+    "exe": "/usr/lib/udisks2/udisksd",
+    "mount namespace": "-1",
+    "name": "udisksd",
+    "user namespace": "-1"
+  },
+  "writers": [{
+    "pid namespace": "4026531836",
+    "mount namespace": "4026531840",
+    "children pid namespace": "4026531836",
+    "net namespace": "4026531992",
+    "user namespace": "4026531837",
+    "ipc namespace": "4026531839"
+  }],
+  "read-edge": {
+    "event id": "2451",
+    "source": "syscall",
+    "time": "1680053806.361",
+    "type": "Used",
+    "operation": "close"
+  },
+  "artifacts": [{
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "source": "syscall",
+    "read fd": "17",
+    "write fd": "18"
+  }]
+}
+{
+  "artifact": {
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "read fd": "15",
+    "write fd": "16"
+  },
+  "cross-namespace-event-id": "12",
+  "reader": {
+    "gid": "0",
+    "euid": "0",
+    "children pid namespace": "4026531836",
+    "start time": "1680053806.361",
+    "ns pid": "13431",
+    "pid": "13431",
+    "source": "syscall",
+    "type": "Process",
+    "net namespace": "4026531992",
+    "ipc namespace": "4026531839",
+    "ppid": "919",
+    "pid namespace": "4026531836",
+    "cwd": "/",
+    "uid": "0",
+    "egid": "0",
+    "exe": "/usr/lib/udisks2/udisksd",
+    "mount namespace": "4026531840",
+    "name": "udisksd",
+    "user namespace": "4026531837"
+  },
+  "writers": [{
+    "pid namespace": "-1",
+    "mount namespace": "-1",
+    "children pid namespace": "-1",
+    "net namespace": "-1",
+    "user namespace": "-1",
+    "ipc namespace": "-1"
+  }],
+  "read-edge": {
+    "event id": "2459",
+    "source": "syscall",
+    "time": "1680053806.365",
+    "type": "Used",
+    "operation": "close"
+  },
+  "artifacts": [{
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "source": "syscall",
+    "read fd": "15",
+    "write fd": "16"
+  }]
+}
+{
+  "artifact": {
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "read fd": "17",
+    "write fd": "18"
+  },
+  "cross-namespace-event-id": "13",
+  "reader": {
+    "gid": "0",
+    "euid": "0",
+    "children pid namespace": "4026531836",
+    "start time": "1680053806.361",
+    "ns pid": "13431",
+    "pid": "13431",
+    "source": "syscall",
+    "type": "Process",
+    "net namespace": "4026531992",
+    "ipc namespace": "4026531839",
+    "ppid": "919",
+    "pid namespace": "4026531836",
+    "cwd": "/",
+    "uid": "0",
+    "egid": "0",
+    "exe": "/usr/lib/udisks2/udisksd",
+    "mount namespace": "4026531840",
+    "name": "udisksd",
+    "user namespace": "4026531837"
+  },
+  "writers": [{
+    "pid namespace": "-1",
+    "mount namespace": "-1",
+    "children pid namespace": "-1",
+    "net namespace": "-1",
+    "user namespace": "-1",
+    "ipc namespace": "-1"
+  }],
+  "read-edge": {
+    "event id": "2460",
+    "source": "syscall",
+    "time": "1680053806.365",
+    "type": "Used",
+    "operation": "close"
+  },
+  "artifacts": [{
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "source": "syscall",
+    "read fd": "17",
+    "write fd": "18"
+  }]
+}
+{
+  "artifact": {
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "read fd": "19",
+    "write fd": "20"
+  },
+  "cross-namespace-event-id": "14",
+  "reader": {
+    "gid": "0",
+    "euid": "0",
+    "children pid namespace": "4026531836",
+    "start time": "1680053806.361",
+    "ns pid": "13431",
+    "pid": "13431",
+    "source": "syscall",
+    "type": "Process",
+    "net namespace": "4026531992",
+    "ipc namespace": "4026531839",
+    "ppid": "919",
+    "pid namespace": "4026531836",
+    "cwd": "/",
+    "uid": "0",
+    "egid": "0",
+    "exe": "/usr/lib/udisks2/udisksd",
+    "mount namespace": "4026531840",
+    "name": "udisksd",
+    "user namespace": "4026531837"
+  },
+  "writers": [{
+    "pid namespace": "-1",
+    "mount namespace": "-1",
+    "children pid namespace": "-1",
+    "net namespace": "-1",
+    "user namespace": "-1",
+    "ipc namespace": "-1"
+  }],
+  "read-edge": {
+    "event id": "2461",
+    "source": "syscall",
+    "time": "1680053806.365",
+    "type": "Used",
+    "operation": "close"
+  },
+  "artifacts": [{
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "source": "syscall",
+    "read fd": "19",
+    "write fd": "20"
+  }]
+}
+{
+  "artifact": {
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "read fd": "19",
+    "write fd": "20"
+  },
+  "cross-namespace-event-id": "15",
+  "reader": {
+    "gid": "0",
+    "euid": "0",
+    "children pid namespace": "-1",
+    "pid": "919",
+    "seen time": "1680053806.341",
+    "source": "syscall",
+    "type": "Process",
+    "net namespace": "-1",
+    "ipc namespace": "-1",
+    "ppid": "1",
+    "pid namespace": "-1",
+    "cwd": "/",
+    "uid": "0",
+    "egid": "0",
+    "exe": "/usr/lib/udisks2/udisksd",
+    "mount namespace": "-1",
+    "name": "udisksd",
+    "user namespace": "-1"
+  },
+  "writers": [{
+    "pid namespace": "4026531836",
+    "mount namespace": "4026531840",
+    "children pid namespace": "4026531836",
+    "net namespace": "4026531992",
+    "user namespace": "4026531837",
+    "ipc namespace": "4026531839"
+  }],
+  "read-edge": {
+    "event id": "2590",
+    "source": "syscall",
+    "time": "1680053806.365",
+    "type": "Used",
+    "operation": "close"
+  },
+  "artifacts": [{
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "source": "syscall",
+    "read fd": "19",
+    "write fd": "20"
+  }]
+}
+{
+  "artifact": {
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "read fd": "17",
+    "write fd": "18"
+  },
+  "cross-namespace-event-id": "16",
+  "reader": {
+    "gid": "0",
+    "euid": "0",
+    "children pid namespace": "-1",
+    "pid": "919",
+    "seen time": "1680053806.341",
+    "source": "syscall",
+    "type": "Process",
+    "net namespace": "-1",
+    "ipc namespace": "-1",
+    "ppid": "1",
+    "pid namespace": "-1",
+    "cwd": "/",
+    "uid": "0",
+    "egid": "0",
+    "exe": "/usr/lib/udisks2/udisksd",
+    "mount namespace": "-1",
+    "name": "udisksd",
+    "user namespace": "-1"
+  },
+  "writers": [{
+    "pid namespace": "4026531836",
+    "mount namespace": "4026531840",
+    "children pid namespace": "4026531836",
+    "net namespace": "4026531992",
+    "user namespace": "4026531837",
+    "ipc namespace": "4026531839"
+  }],
+  "read-edge": {
+    "event id": "2591",
+    "source": "syscall",
+    "time": "1680053806.365",
+    "type": "Used",
+    "operation": "close"
+  },
+  "artifacts": [{
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "source": "syscall",
+    "read fd": "17",
+    "write fd": "18"
+  }]
+}
+{
+  "artifact": {
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "read fd": "15",
+    "write fd": "16"
+  },
+  "cross-namespace-event-id": "17",
+  "reader": {
+    "gid": "0",
+    "euid": "0",
+    "children pid namespace": "4026531836",
+    "start time": "1680053806.669",
+    "ns pid": "13438",
+    "pid": "13438",
+    "source": "syscall",
+    "type": "Process",
+    "net namespace": "4026531992",
+    "ipc namespace": "4026531839",
+    "ppid": "919",
+    "pid namespace": "4026531836",
+    "cwd": "/",
+    "uid": "0",
+    "egid": "0",
+    "exe": "/usr/lib/udisks2/udisksd",
+    "mount namespace": "4026531840",
+    "name": "udisksd",
+    "user namespace": "4026531837"
+  },
+  "writers": [{
+    "pid namespace": "-1",
+    "mount namespace": "-1",
+    "children pid namespace": "-1",
+    "net namespace": "-1",
+    "user namespace": "-1",
+    "ipc namespace": "-1"
+  }],
+  "read-edge": {
+    "event id": "2735",
+    "source": "syscall",
+    "time": "1680053806.669",
+    "type": "Used",
+    "operation": "close"
+  },
+  "artifacts": [{
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "source": "syscall",
+    "read fd": "15",
+    "write fd": "16"
+  }]
+}
+{
+  "artifact": {
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "read fd": "17",
+    "write fd": "18"
+  },
+  "cross-namespace-event-id": "18",
+  "reader": {
+    "gid": "0",
+    "euid": "0",
+    "children pid namespace": "4026531836",
+    "start time": "1680053806.669",
+    "ns pid": "13438",
+    "pid": "13438",
+    "source": "syscall",
+    "type": "Process",
+    "net namespace": "4026531992",
+    "ipc namespace": "4026531839",
+    "ppid": "919",
+    "pid namespace": "4026531836",
+    "cwd": "/",
+    "uid": "0",
+    "egid": "0",
+    "exe": "/usr/lib/udisks2/udisksd",
+    "mount namespace": "4026531840",
+    "name": "udisksd",
+    "user namespace": "4026531837"
+  },
+  "writers": [{
+    "pid namespace": "-1",
+    "mount namespace": "-1",
+    "children pid namespace": "-1",
+    "net namespace": "-1",
+    "user namespace": "-1",
+    "ipc namespace": "-1"
+  }],
+  "read-edge": {
+    "event id": "2736",
+    "source": "syscall",
+    "time": "1680053806.669",
+    "type": "Used",
+    "operation": "close"
+  },
+  "artifacts": [{
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "source": "syscall",
+    "read fd": "17",
+    "write fd": "18"
+  }]
+}
+{
+  "artifact": {
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "read fd": "19",
+    "write fd": "20"
+  },
+  "cross-namespace-event-id": "19",
+  "reader": {
+    "gid": "0",
+    "euid": "0",
+    "children pid namespace": "4026531836",
+    "start time": "1680053806.669",
+    "ns pid": "13438",
+    "pid": "13438",
+    "source": "syscall",
+    "type": "Process",
+    "net namespace": "4026531992",
+    "ipc namespace": "4026531839",
+    "ppid": "919",
+    "pid namespace": "4026531836",
+    "cwd": "/",
+    "uid": "0",
+    "egid": "0",
+    "exe": "/usr/lib/udisks2/udisksd",
+    "mount namespace": "4026531840",
+    "name": "udisksd",
+    "user namespace": "4026531837"
+  },
+  "writers": [{
+    "pid namespace": "-1",
+    "mount namespace": "-1",
+    "children pid namespace": "-1",
+    "net namespace": "-1",
+    "user namespace": "-1",
+    "ipc namespace": "-1"
+  }],
+  "read-edge": {
+    "event id": "2737",
+    "source": "syscall",
+    "time": "1680053806.669",
+    "type": "Used",
+    "operation": "close"
+  },
+  "artifacts": [{
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "source": "syscall",
+    "read fd": "19",
+    "write fd": "20"
+  }]
+}
+{
+  "artifact": {
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "read fd": "17",
+    "write fd": "18"
+  },
+  "cross-namespace-event-id": "20",
+  "reader": {
+    "gid": "0",
+    "euid": "0",
+    "children pid namespace": "-1",
+    "pid": "919",
+    "seen time": "1680053806.341",
+    "source": "syscall",
+    "type": "Process",
+    "net namespace": "-1",
+    "ipc namespace": "-1",
+    "ppid": "1",
+    "pid namespace": "-1",
+    "cwd": "/",
+    "uid": "0",
+    "egid": "0",
+    "exe": "/usr/lib/udisks2/udisksd",
+    "mount namespace": "-1",
+    "name": "udisksd",
+    "user namespace": "-1"
+  },
+  "writers": [{
+    "pid namespace": "4026531836",
+    "mount namespace": "4026531840",
+    "children pid namespace": "4026531836",
+    "net namespace": "4026531992",
+    "user namespace": "4026531837",
+    "ipc namespace": "4026531839"
+  }],
+  "read-edge": {
+    "event id": "3566",
+    "source": "syscall",
+    "time": "1680053806.681",
+    "type": "Used",
+    "operation": "close"
+  },
+  "artifacts": [{
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "source": "syscall",
+    "read fd": "17",
+    "write fd": "18"
+  }]
+}
+{
+  "artifact": {
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "read fd": "19",
+    "write fd": "20"
+  },
+  "cross-namespace-event-id": "21",
+  "reader": {
+    "gid": "0",
+    "euid": "0",
+    "children pid namespace": "-1",
+    "pid": "919",
+    "seen time": "1680053806.341",
+    "source": "syscall",
+    "type": "Process",
+    "net namespace": "-1",
+    "ipc namespace": "-1",
+    "ppid": "1",
+    "pid namespace": "-1",
+    "cwd": "/",
+    "uid": "0",
+    "egid": "0",
+    "exe": "/usr/lib/udisks2/udisksd",
+    "mount namespace": "-1",
+    "name": "udisksd",
+    "user namespace": "-1"
+  },
+  "writers": [{
+    "pid namespace": "4026531836",
+    "mount namespace": "4026531840",
+    "children pid namespace": "4026531836",
+    "net namespace": "4026531992",
+    "user namespace": "4026531837",
+    "ipc namespace": "4026531839"
+  }],
+  "read-edge": {
+    "event id": "3567",
+    "source": "syscall",
+    "time": "1680053806.681",
+    "type": "Used",
+    "operation": "close"
+  },
+  "artifacts": [{
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "source": "syscall",
+    "read fd": "19",
+    "write fd": "20"
+  }]
+}
+{
+  "artifact": {
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "read fd": "15",
+    "write fd": "16"
+  },
+  "cross-namespace-event-id": "22",
+  "reader": {
+    "gid": "0",
+    "euid": "0",
+    "children pid namespace": "4026531836",
+    "start time": "1680053806.685",
+    "ns pid": "13439",
+    "pid": "13439",
+    "source": "syscall",
+    "type": "Process",
+    "net namespace": "4026531992",
+    "ipc namespace": "4026531839",
+    "ppid": "919",
+    "pid namespace": "4026531836",
+    "cwd": "/",
+    "uid": "0",
+    "egid": "0",
+    "exe": "/usr/lib/udisks2/udisksd",
+    "mount namespace": "4026531840",
+    "name": "udisksd",
+    "user namespace": "4026531837"
+  },
+  "writers": [{
+    "pid namespace": "-1",
+    "mount namespace": "-1",
+    "children pid namespace": "-1",
+    "net namespace": "-1",
+    "user namespace": "-1",
+    "ipc namespace": "-1"
+  }],
+  "read-edge": {
+    "event id": "3588",
+    "source": "syscall",
+    "time": "1680053806.685",
+    "type": "Used",
+    "operation": "close"
+  },
+  "artifacts": [{
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "source": "syscall",
+    "read fd": "15",
+    "write fd": "16"
+  }]
+}
+{
+  "artifact": {
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "read fd": "17",
+    "write fd": "18"
+  },
+  "cross-namespace-event-id": "23",
+  "reader": {
+    "gid": "0",
+    "euid": "0",
+    "children pid namespace": "4026531836",
+    "start time": "1680053806.685",
+    "ns pid": "13439",
+    "pid": "13439",
+    "source": "syscall",
+    "type": "Process",
+    "net namespace": "4026531992",
+    "ipc namespace": "4026531839",
+    "ppid": "919",
+    "pid namespace": "4026531836",
+    "cwd": "/",
+    "uid": "0",
+    "egid": "0",
+    "exe": "/usr/lib/udisks2/udisksd",
+    "mount namespace": "4026531840",
+    "name": "udisksd",
+    "user namespace": "4026531837"
+  },
+  "writers": [{
+    "pid namespace": "-1",
+    "mount namespace": "-1",
+    "children pid namespace": "-1",
+    "net namespace": "-1",
+    "user namespace": "-1",
+    "ipc namespace": "-1"
+  }],
+  "read-edge": {
+    "event id": "3589",
+    "source": "syscall",
+    "time": "1680053806.685",
+    "type": "Used",
+    "operation": "close"
+  },
+  "artifacts": [{
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "source": "syscall",
+    "read fd": "17",
+    "write fd": "18"
+  }]
+}
+{
+  "artifact": {
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "read fd": "19",
+    "write fd": "20"
+  },
+  "cross-namespace-event-id": "24",
+  "reader": {
+    "gid": "0",
+    "euid": "0",
+    "children pid namespace": "4026531836",
+    "start time": "1680053806.685",
+    "ns pid": "13439",
+    "pid": "13439",
+    "source": "syscall",
+    "type": "Process",
+    "net namespace": "4026531992",
+    "ipc namespace": "4026531839",
+    "ppid": "919",
+    "pid namespace": "4026531836",
+    "cwd": "/",
+    "uid": "0",
+    "egid": "0",
+    "exe": "/usr/lib/udisks2/udisksd",
+    "mount namespace": "4026531840",
+    "name": "udisksd",
+    "user namespace": "4026531837"
+  },
+  "writers": [{
+    "pid namespace": "-1",
+    "mount namespace": "-1",
+    "children pid namespace": "-1",
+    "net namespace": "-1",
+    "user namespace": "-1",
+    "ipc namespace": "-1"
+  }],
+  "read-edge": {
+    "event id": "3590",
+    "source": "syscall",
+    "time": "1680053806.685",
+    "type": "Used",
+    "operation": "close"
+  },
+  "artifacts": [{
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "source": "syscall",
+    "read fd": "19",
+    "write fd": "20"
+  }]
+}
+{
+  "artifact": {
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "read fd": "19",
+    "write fd": "20"
+  },
+  "cross-namespace-event-id": "25",
+  "reader": {
+    "gid": "0",
+    "euid": "0",
+    "children pid namespace": "-1",
+    "pid": "919",
+    "seen time": "1680053806.341",
+    "source": "syscall",
+    "type": "Process",
+    "net namespace": "-1",
+    "ipc namespace": "-1",
+    "ppid": "1",
+    "pid namespace": "-1",
+    "cwd": "/",
+    "uid": "0",
+    "egid": "0",
+    "exe": "/usr/lib/udisks2/udisksd",
+    "mount namespace": "-1",
+    "name": "udisksd",
+    "user namespace": "-1"
+  },
+  "writers": [{
+    "pid namespace": "4026531836",
+    "mount namespace": "4026531840",
+    "children pid namespace": "4026531836",
+    "net namespace": "4026531992",
+    "user namespace": "4026531837",
+    "ipc namespace": "4026531839"
+  }],
+  "read-edge": {
+    "event id": "3719",
+    "source": "syscall",
+    "time": "1680053806.689",
+    "type": "Used",
+    "operation": "close"
+  },
+  "artifacts": [{
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "source": "syscall",
+    "read fd": "19",
+    "write fd": "20"
+  }]
+}
+{
+  "artifact": {
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "read fd": "17",
+    "write fd": "18"
+  },
+  "cross-namespace-event-id": "26",
+  "reader": {
+    "gid": "0",
+    "euid": "0",
+    "children pid namespace": "-1",
+    "pid": "919",
+    "seen time": "1680053806.341",
+    "source": "syscall",
+    "type": "Process",
+    "net namespace": "-1",
+    "ipc namespace": "-1",
+    "ppid": "1",
+    "pid namespace": "-1",
+    "cwd": "/",
+    "uid": "0",
+    "egid": "0",
+    "exe": "/usr/lib/udisks2/udisksd",
+    "mount namespace": "-1",
+    "name": "udisksd",
+    "user namespace": "-1"
+  },
+  "writers": [{
+    "pid namespace": "4026531836",
+    "mount namespace": "4026531840",
+    "children pid namespace": "4026531836",
+    "net namespace": "4026531992",
+    "user namespace": "4026531837",
+    "ipc namespace": "4026531839"
+  }],
+  "read-edge": {
+    "event id": "3720",
+    "source": "syscall",
+    "time": "1680053806.689",
+    "type": "Used",
+    "operation": "close"
+  },
+  "artifacts": [{
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "source": "syscall",
+    "read fd": "17",
+    "write fd": "18"
+  }]
+}
+{
+  "artifact": {
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "read fd": "15",
+    "write fd": "16"
+  },
+  "cross-namespace-event-id": "27",
+  "reader": {
+    "gid": "0",
+    "euid": "0",
+    "children pid namespace": "4026531836",
+    "start time": "1680053806.689",
+    "ns pid": "13440",
+    "pid": "13440",
+    "source": "syscall",
+    "type": "Process",
+    "net namespace": "4026531992",
+    "ipc namespace": "4026531839",
+    "ppid": "919",
+    "pid namespace": "4026531836",
+    "cwd": "/",
+    "uid": "0",
+    "egid": "0",
+    "exe": "/usr/lib/udisks2/udisksd",
+    "mount namespace": "4026531840",
+    "name": "udisksd",
+    "user namespace": "4026531837"
+  },
+  "writers": [{
+    "pid namespace": "-1",
+    "mount namespace": "-1",
+    "children pid namespace": "-1",
+    "net namespace": "-1",
+    "user namespace": "-1",
+    "ipc namespace": "-1"
+  }],
+  "read-edge": {
+    "event id": "3728",
+    "source": "syscall",
+    "time": "1680053806.689",
+    "type": "Used",
+    "operation": "close"
+  },
+  "artifacts": [{
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "source": "syscall",
+    "read fd": "15",
+    "write fd": "16"
+  }]
+}
+{
+  "artifact": {
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "read fd": "17",
+    "write fd": "18"
+  },
+  "cross-namespace-event-id": "28",
+  "reader": {
+    "gid": "0",
+    "euid": "0",
+    "children pid namespace": "4026531836",
+    "start time": "1680053806.689",
+    "ns pid": "13440",
+    "pid": "13440",
+    "source": "syscall",
+    "type": "Process",
+    "net namespace": "4026531992",
+    "ipc namespace": "4026531839",
+    "ppid": "919",
+    "pid namespace": "4026531836",
+    "cwd": "/",
+    "uid": "0",
+    "egid": "0",
+    "exe": "/usr/lib/udisks2/udisksd",
+    "mount namespace": "4026531840",
+    "name": "udisksd",
+    "user namespace": "4026531837"
+  },
+  "writers": [{
+    "pid namespace": "-1",
+    "mount namespace": "-1",
+    "children pid namespace": "-1",
+    "net namespace": "-1",
+    "user namespace": "-1",
+    "ipc namespace": "-1"
+  }],
+  "read-edge": {
+    "event id": "3729",
+    "source": "syscall",
+    "time": "1680053806.689",
+    "type": "Used",
+    "operation": "close"
+  },
+  "artifacts": [{
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "source": "syscall",
+    "read fd": "17",
+    "write fd": "18"
+  }]
+}
+{
+  "artifact": {
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "read fd": "19",
+    "write fd": "20"
+  },
+  "cross-namespace-event-id": "29",
+  "reader": {
+    "gid": "0",
+    "euid": "0",
+    "children pid namespace": "4026531836",
+    "start time": "1680053806.689",
+    "ns pid": "13440",
+    "pid": "13440",
+    "source": "syscall",
+    "type": "Process",
+    "net namespace": "4026531992",
+    "ipc namespace": "4026531839",
+    "ppid": "919",
+    "pid namespace": "4026531836",
+    "cwd": "/",
+    "uid": "0",
+    "egid": "0",
+    "exe": "/usr/lib/udisks2/udisksd",
+    "mount namespace": "4026531840",
+    "name": "udisksd",
+    "user namespace": "4026531837"
+  },
+  "writers": [{
+    "pid namespace": "-1",
+    "mount namespace": "-1",
+    "children pid namespace": "-1",
+    "net namespace": "-1",
+    "user namespace": "-1",
+    "ipc namespace": "-1"
+  }],
+  "read-edge": {
+    "event id": "3730",
+    "source": "syscall",
+    "time": "1680053806.689",
+    "type": "Used",
+    "operation": "close"
+  },
+  "artifacts": [{
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "source": "syscall",
+    "read fd": "19",
+    "write fd": "20"
+  }]
+}
+{
+  "artifact": {
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "read fd": "19",
+    "write fd": "20"
+  },
+  "cross-namespace-event-id": "30",
+  "reader": {
+    "gid": "0",
+    "euid": "0",
+    "children pid namespace": "-1",
+    "pid": "919",
+    "seen time": "1680053806.341",
+    "source": "syscall",
+    "type": "Process",
+    "net namespace": "-1",
+    "ipc namespace": "-1",
+    "ppid": "1",
+    "pid namespace": "-1",
+    "cwd": "/",
+    "uid": "0",
+    "egid": "0",
+    "exe": "/usr/lib/udisks2/udisksd",
+    "mount namespace": "-1",
+    "name": "udisksd",
+    "user namespace": "-1"
+  },
+  "writers": [{
+    "pid namespace": "4026531836",
+    "mount namespace": "4026531840",
+    "children pid namespace": "4026531836",
+    "net namespace": "4026531992",
+    "user namespace": "4026531837",
+    "ipc namespace": "4026531839"
+  }],
+  "read-edge": {
+    "event id": "3859",
+    "source": "syscall",
+    "time": "1680053806.689",
+    "type": "Used",
+    "operation": "close"
+  },
+  "artifacts": [{
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "source": "syscall",
+    "read fd": "19",
+    "write fd": "20"
+  }]
+}
+{
+  "artifact": {
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "read fd": "17",
+    "write fd": "18"
+  },
+  "cross-namespace-event-id": "31",
+  "reader": {
+    "gid": "0",
+    "euid": "0",
+    "children pid namespace": "-1",
+    "pid": "919",
+    "seen time": "1680053806.341",
+    "source": "syscall",
+    "type": "Process",
+    "net namespace": "-1",
+    "ipc namespace": "-1",
+    "ppid": "1",
+    "pid namespace": "-1",
+    "cwd": "/",
+    "uid": "0",
+    "egid": "0",
+    "exe": "/usr/lib/udisks2/udisksd",
+    "mount namespace": "-1",
+    "name": "udisksd",
+    "user namespace": "-1"
+  },
+  "writers": [{
+    "pid namespace": "4026531836",
+    "mount namespace": "4026531840",
+    "children pid namespace": "4026531836",
+    "net namespace": "4026531992",
+    "user namespace": "4026531837",
+    "ipc namespace": "4026531839"
+  }],
+  "read-edge": {
+    "event id": "3860",
+    "source": "syscall",
+    "time": "1680053806.689",
+    "type": "Used",
+    "operation": "close"
+  },
+  "artifacts": [{
+    "subtype": "unnamed pipe",
+    "tgid": "919",
+    "source": "syscall",
+    "read fd": "17",
+    "write fd": "18"
+  }]
+}
