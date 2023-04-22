@@ -5,9 +5,9 @@ import os
 #DATA_PATH="./func_test.json"
 DATA_PATH="../test_data/Raw-for-normal-tar.json"
 MAX_LEV=6
-TAR_ID="7ea90b127113742b6a15a830df9371d3"
+TAR_ID="b7f744d75e01ed158d3dc78264f17559"
 OUTPUT_PATH="./data/"
-DIRECTION=False
+DIRECTION=True
 """
 运行前有这几个地方需要检查和配置：
 1. 输入位置。TAR_ID
@@ -162,6 +162,8 @@ def display_name(records: list[dict], path: str):
         if record["type"] == "Process":
             tmp = {
                 "children pid namespace": anno["children pid namespace"], "pid": anno["pid"], "net ns": anno["net namespace"], "PID ns": anno["pid namespace"], "mnt ns": anno["mount namespace"], "exe path": anno["exe"], "id": record["id"], "type": record["type"]}
+            if "command line" in anno.keys():
+                tmp['cmd']=anno['command line']
         elif record["type"] == "Artifact":
             if anno["subtype"] == "file":
                 tmp = {"path": anno["path"], "subtype": anno["subtype"],
