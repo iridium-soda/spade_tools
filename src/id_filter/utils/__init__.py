@@ -6,9 +6,8 @@ import logging
 import argparse
 
 VERSION = "v0.0.0.a"
-# Register logger
-logger = logging()
-logger.basicConfig(level=logging.DEBUG, format="[%(levelname)s]\t%(message)s")
+# Register logging
+logging.basicConfig(format= '[%(levelname)s]\t%(message)s',level=logging.INFO)
 
 
 # Register argparser
